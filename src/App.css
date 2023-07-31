@@ -1,0 +1,249 @@
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+}
+
+.main-canvas-container {
+  width: 440px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.menu-container {
+
+  width: 440px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+
+}
+
+.menu-arrow-img {
+  width: 20px;
+  /* border: 1px solid #fff; */
+  height: 20px;
+  cursor: pointer;
+}
+
+.arrow-up-img {
+  width: 100%;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  z-index: -1;
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.cancel-button:hover {
+  transform: scale(1.1);
+}
+
+.performance-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.color-container {
+
+  top: 0;
+  transform: translate(-50%, 15rem);
+  z-index: -1;
+  width: 300px;
+
+
+  height: 20vh;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+
+
+}
+
+.color-header {
+  font-size: 1.4rem;
+  z-index: -1;
+  width: 100%;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -9rem);
+}
+
+.color-div {
+  width: 32px;
+  height: 32px;
+  z-index: -1;
+  margin: 15px 0;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  transition: .5s all ease-out;
+}
+
+.color-div-selected {
+  transform: scale(1.1);
+}
+
+
+
+/* Apply the animation to the color-img-icon class */
+.color-img-icon {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 15px;
+  background: radial-gradient(circle, #f6d9d2, #52a3af, #f6d9d2, #f08966, #f9e58a, #ed93c9);
+  /* Replace these colors with your desired pastel colors */
+  margin: -2px;
+  animation: homeani 5s infinite linear;
+  background-size: 200% 200%;
+  /* This value can be adjusted to control the gradient size */
+  background-position: 0% 0%;
+  /* This value controls the initial position of the gradient */
+}
+
+@keyframes homeani {
+  0% {
+    background-position: 0% 0%;
+
+  }
+
+  100% {
+    background-position: 100% 100%;
+
+  }
+}
+
+.color-white-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+}
+
+.color-icon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7.3px;
+  font-weight: 700;
+  color: rgb(80, 79, 79);
+}
+
+.menu-arrow-img {
+  /* animation */
+  animation: upDown 2s infinite ease-in-out;
+  cursor: pointer;
+  z-index: 5;
+
+}
+
+.menu-arrow-img>img {
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+
+.loading-container {
+  position: relative;
+
+  height: 100vh;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-bar-container {
+  transform: translate(90px, -150px) rotate(45deg);
+  font-size: 3rem;
+  color: black;
+
+}
+
+.camera-img-icon,
+.ecran-img-icon,
+.performance-img-icon {
+  margin-top: 7px;
+  width: 55%;
+}
+
+.camera-icon-text {
+
+  font-size: 9px;
+  font-weight: 700;
+  color: white;
+}
+
+
+.ecran-icon-text {
+
+  font-size: 9px;
+  font-weight: 700;
+  color: white;
+}
+
+.icon-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+
+  /* border: 1px solid white; */
+}
+
+@media (max-width: 440px) {
+  .menu-container {
+    width: 100vw;
+  }
+
+  .main-canvas-container {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .loading-bar-container {
+    transform: translate(50%, 50%) rotate(45deg);
+
+  }
+}
