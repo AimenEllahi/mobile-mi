@@ -27,21 +27,21 @@ export default function Camera() {
       className='cam-container'
       ref={ref}
       style={{
-        backgroundImage: `url(/assets/Camera/camera.webp)`,
+        backgroundImage: `url(/assets/Camera/camera.png)`,
       }}
     >
       <div className='camera-header'>
         <div className='icon-cam'>
-          <img src='/assets/icons_camera/01.svg' className='icon-cam-img' />
+          <img src='/assets/Camera/mi01.svg' className='icon-cam-img' />
           <span className='icon-cam-heading'>50MP</span>
           <span className='icon-cam-text'>Primary Camera (1.28um, f/1.8)</span>
         </div>
         <div className='icon-cam'>
-          <img src='/assets/icons_camera/02.svg' className='icon-cam-img' />
+          <img src='/assets/Camera/mi02.svg' className='icon-cam-img' />
           <span className='icon-cam-heading'>2MP</span>
-          <span className='icon-cam-text'>Macro Camera</span>
+          <span className='icon-cam-text'>Depth Camera</span>
         </div>
-        <div className='icon-cam'
+        {/* <div className='icon-cam'
            style={{
             transform: "translateY(-40px)"
           }}>
@@ -57,7 +57,7 @@ export default function Camera() {
           />
           <span className='icon-cam-heading'>8MP</span>
           <span className='icon-cam-text'>Ultra - wide</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

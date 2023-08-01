@@ -28,7 +28,7 @@ export default function Display() {
     <div
       ref={ref}
       style={{
-        backgroundImage: `url(/assets/Display/Display-2.webp)`,
+        backgroundImage: `url(/assets/Display/display.png)`,
       }}
       className='display-container'
     >
@@ -36,7 +36,7 @@ export default function Display() {
         <div className='display-icon-div'>
           <div className='display-img-div'>
             <img
-              src='/assets/Display/display1.svg'
+              src='/assets/Display/mi01.svg'
               className='display-icon-img'
             />
           </div>
@@ -46,7 +46,7 @@ export default function Display() {
         <div className='display-icon-div'>
           <div className='display-img-div'>
             <img
-              src='/assets/Display/display2.svg'
+              src='/assets/Display/mi02.svg'
               className='display-icon-img'
             />
           </div>
@@ -56,7 +56,7 @@ export default function Display() {
         <div className='display-icon-div'>
           <div className='display-img-div'>
             <img
-              src='/assets/Display/display3.svg'
+              src='/assets/Display/mi03.svg'
               className='display-icon-img'
             />
           </div>

@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 
 const imageUrl = [
   "/assets/Performance/battery.png",
-  "/assets/Performance/Helio.png",
+  "/assets/Performance/Snapdragon.png",
 ];
 export default function Performance() {
   const perfContRef = useRef();
@@ -58,7 +58,7 @@ export default function Performance() {
           className={`performance-text ${backgroundImage === 2 && "active"}`}
           onClick={handleHelioClick}
         >
-          MediaTek Helio G88
+          Snapdragon® 4 Gen 2 Mobile Platform
         </span>
       </div>
     </div>
