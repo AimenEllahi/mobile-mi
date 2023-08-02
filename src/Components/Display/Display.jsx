@@ -36,17 +36,17 @@ export default function Display() {
         <div className='display-icon-div'>
           <div className='display-img-div'>
             <img
-              src='/assets/Display/mi01.svg'
+              src='/assets/Display/mi02.svg'
               className='display-icon-img'
             />
           </div>
           <span className='display-icon-text-heading'>450</span>
-          <span className='display-icon-text'>nits brightness</span>
+          <span className='display-icon-text'>NITS Brightness</span>
         </div>
         <div className='display-icon-div'>
           <div className='display-img-div'>
             <img
-              src='/assets/Display/mi02.svg'
+              src='/assets/Display/mi01.svg'
               className='display-icon-img'
             />
           </div>
