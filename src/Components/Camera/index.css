@@ -40,7 +40,7 @@
 
 .icon-cam-img {
   width: 140px;
-  
+  transform: translate(0, 22%);
   /* border: 1px solid blue; */
 }
 

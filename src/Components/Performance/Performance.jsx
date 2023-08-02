@@ -5,7 +5,7 @@ import useAnimationStore from "../../Store/AnimationState";
 import { gsap } from "gsap";
 
 const imageUrl = [
-  "/assets/Performance/battery.png",
+  "/assets/Performance/battery.webp",
   "/assets/Performance/Snapdragon.png",
 ];
 export default function Performance() {
