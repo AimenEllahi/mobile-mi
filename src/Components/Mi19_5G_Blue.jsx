@@ -14,7 +14,7 @@ import useAnimationStore from "../Store/AnimationState";
 const colorArray = [
   {
     name: "Pastel Blue",
-    hex: "#9fb6d0",
+    hex: "#B5D1EE",
     imageUrl: "/assets/color_1.png",
   },
   {
@@ -34,7 +34,7 @@ export function Model(props) {
   const { camera, gl, scene } = useThree();
   const activeState = useAnimationStore((state) => state.activeState);
 
-  const [color, setColor] = useState("#9fb6d0");
+  const [color, setColor] = useState("#B5D1EE");
   const groupRef = useRef();
 
   useEffect(() => {
@@ -128,9 +128,9 @@ export function Model(props) {
 
           <img
             src='/assets/color_1.png'
-            onClick={() => setColor("#9fb6d0")}
+            onClick={() => setColor("#B5D1EE")}
             className={`color-div ${
-              color === "#9fb6d0" && "color-div-selected"
+              color === "#B5D1EE" && "color-div-selected"
             } `}
           />
           <img
@@ -163,7 +163,7 @@ export function Model(props) {
       material={materials.YELLOW} 
       />
       <mesh 
-      material-color={activeState === 1 ? color : "#9fb6d0"}
+      material-color={activeState === 1 ? color : "#B5D1EE"}
       geometry={nodes['GLASS-X19-BATT-COVER002'].geometry} 
       material={materials['Glass.002']} 
       rotation={[Math.PI / 2, 0, 0]} 
@@ -187,7 +187,7 @@ export function Model(props) {
       <mesh 
       geometry={nodes['SJ-X19-BOT-COVER002'].geometry} 
       material={materials.PHONE_COLOR_1}
-      material-color={activeState === 1 ? color : "#9fb6d0"} 
+      material-color={activeState === 1 ? color : "#B5D1EE"} 
       />
       <mesh 
       geometry={nodes['SJ-X19A-CAM-DECO-50M002'].geometry} 
