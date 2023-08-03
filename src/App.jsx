@@ -10,11 +10,11 @@ import {
   Html,
 } from "@react-three/drei";
 import { Model as ModelBlue } from "./Components/Mi19_5G_Blue";
-import { TextureLoader, CubeTextureLoader } from "three";
+import { TextureLoader } from "three";
 import useAnimationStore from "./Store/AnimationState";
 import Animation from "./Components/Animations";
 import { MdCancel } from "react-icons/md";
-import { useEffect } from "react";
+
 import Gallery from "./Components/Gallery/Gallery";
 import Display from "./Components/Display/Display";
 import Camera from "./Components/Camera/Camera";
@@ -106,9 +106,9 @@ function App() {
           }}
         >
           <ambientLight intensity={0.5} />
-          <pointLight position={[0, 10, 10]} />
-          <directionalLight intensity={1} />
+          <directionalLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
+            <Environment preset='sunset' />
             {activeState !== 3 && activeState !== 2 && <BackgroundBox />}
             <ModelBlue setModelLoaded={setModelLoaded} />
           </Suspense>
