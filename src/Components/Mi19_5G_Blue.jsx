@@ -24,7 +24,7 @@ const colorArray = [
   },
   {
     name: "Moonstone Silver",
-    hex: "#e7e9ed",
+    hex: "#E0DDE6",
     imageUrl: "/assets/color_3.png",
   },
 ];
@@ -142,9 +142,9 @@ export function Model(props) {
             />
             <img
               src='/assets/color_3.png'
-              onClick={() => setColor("#e7e9ed")}
+              onClick={() => setColor("#E0DDE6")}
               className={`color-div ${
-                color === "#e7e9ed" && "color-div-selected"
+                color === "#E0DDE6" && "color-div-selected"
               } `}
             />
           </div>
@@ -164,6 +164,7 @@ export function Model(props) {
         />
         <mesh
           material-color={activeState === 1 ? color : "#dfebf7"}
+          material-roughness = {.8}
           geometry={nodes["GLASS-X19-BATT-COVER002"].geometry}
           material={materials["Glass.002"]}
           rotation={[Math.PI / 2, 0, 0]}
@@ -188,6 +189,7 @@ export function Model(props) {
           geometry={nodes["SJ-X19-BOT-COVER002"].geometry}
           material={materials.PHONE_COLOR_1}
           material-color={activeState === 1 ? color : "#dfebf7"}
+          material-roughness = {.8}
         />
         <mesh
           geometry={nodes["SJ-X19A-CAM-DECO-50M002"].geometry}
